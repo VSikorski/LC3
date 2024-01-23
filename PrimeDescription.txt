@@ -1,0 +1,32 @@
+Write a program that prints the prime numbers in a given range.
+A prime number is a natural number (positive integer) that is only divisible by itself and 1. There
+are various ways to check whether a number is a prime number, with various levels of efficiency, and
+to pass all test cases you need to implement an efficient prime checker. Note: you do not need to
+implement the Sieve of Eratosthenes; efficiently eliminating a large section of the search space is
+enough.
+Input
+The input for this assignment consists of two natural numbers a and b such that 2 ≤ a, b ≤ 20000
+which denote the range [a, b]. The inputs a and b are separated by a single space and followed by a
+newline character. Note that the range can also be decreasing instead of increasing. An example of
+this is a = 5 and b = 1.
+Output
+First, you should print numbers a and b followed by a newline character. Next, for any integer n in
+the range [a, b] there are two options:
+a) n is a prime number. In this case, you should print n is a prime number, where n denotes
+the value of n;
+b) n is not a prime number. In this case, you should print n is not a prime number as it
+is divisible by k, where n denotes the value of n and k denotes the value of the smallest
+divisor of n.
+Note that if the range is decreasing (e.g. a = 5, b = 1) you should print your results in decreasing
+order of n as well.
+Example 1
+Input
+20 25
+Output
+20 25
+20 is not a prime number as it is divisible by 2
+21 is not a prime number as it is divisible by 3
+22 is not a prime number as it is divisible by 2
+23 is a prime number
+24 is not a prime number as it is divisible by 2
+25 is not a prime number as it is divisible by 5
